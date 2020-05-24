@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* --------------------Variables */
+:root{
+  --green-color:#7ACC2D;
+  --white-color:#fff;
+  --black-color:#151414;
+/* tipografia */
+  --normal:12px;
+  --font-family: 'Open Sans', sans-serif;
+  /* espacios */
+  --space1:10px;
+  --space2:15px;
+  /* box shadow */
+  --box: 0 0 3px #aba9a9;
+}
+/* --------------------Variables */
+
+/* -------------------Margenes, fuentes y padding de html y body  */
+html,body{
+  padding: o;
+  margin: 0;
+  font-size: var(--normal);
+  font-family: var(--font-family);
+}
+
+p, label{
+  font-size: (var(--normal));
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+}
+
+/* -------------------Margenes, fuentes y padding de html y body  */
+
+
+
+/* -------------seccion de nav bar  */
+nav{
+  display: flex;
+  background-color: var(--green-color);
+  padding: 10px;
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;  
+  height: 60px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 15px;
+  list-style: none;
+}
+
+nav li a {
+  color: gray;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: var(--white-color);
+}
+/* -------------seccion de nav bar  */
+
+
+
+/* -------------------seccion principal */
+.main_section{
+  padding: 150px;
+  text-align: center;
+  color: var(--black-color);
+  text-align: center;
+  font: Bold 30px/41px Open Sans;
+  letter-spacing: 0;
+  color: #313337;
+  opacity: 1;
+}
+/* -------------------seccion principal */
+
+
+/* ----------------------seccion de productos INDEX */
+.products{
+  background-image: url(../images/curve.png);
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+  color: var(--black-color);
+  justify-content: center;
+}
+/* ----------------------seccion de productos INDEX */
+
+/* -----------------------seccion de producto INDEX */
+.product{
+  padding: 10px;
+  margin-top: -250px;
+  height: 239px;
+  width: 276px;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+  text-align: center;
+}
+/* -----------------------seccion de producto INDEX */
+
+.img_content{
+  text-align: center;
+}
+
+
+/* --------------seccion del boton de compra */
+.main_button{
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #114a11;
+}
+/* --------------seccion del boton de compra */
+
+
+
+/* ---------seccion de producto */
+.product_section{
+  background-color: var(--white-color);
+  padding: 140px;
+  text-align: left;
+  color: var(--black-color);
+  display: flex;
+  background-position: center;
+  justify-content: center;
+}
+
+.text2_product{
+  margin: 20px;
+}
+
+.product_content{
+  background-color: var(--white-color);
+  text-align: left;
+  margin: 0px 70px 0px 70px;
+  width: 146px;
+  align-items: center;
+}
+
+.img_product{
+  width: 138px;
+  height: 113px;
+}
+.img_product2{
+  width: 112px;
+  height: 103px;
+}
+.img_product3{
+  width: 104px;
+  height: 104px;
+}
+/* ---------seccion de producto */
+
+
+/* -------------seccion de comentario  */
+.comentary_section{
+  color: var(--black-color);
+  text-align: center;
+}
+
+.comentary_content{
+  display: flex;
+  padding: 30px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.comentary_name{
+  margin: 5px 0px 5px 0px;
+  text-align: left;
+  padding: 5px;
+}
+
+.comentary_comentary{
+  text-align: left;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+}
+
+.img_comentary{
+  width: 239px;
+  height: 105px;
+}
+
+.mention_content{
+  background-color: var(--white-color);
+  width: 239px;
+  text-align: center;
+  margin: 5px;
+  box-shadow: var(--box);
+}
+/* -------------seccion de comentario  */
+
+
+/* ------------------seccion de modulo pago  */
+
+.modulo_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space1);
+}
+
+.modulo_pago_images{
+  max-width: 150px;;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.modulo_pago_description{
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.data_pago{
+  margin-top: var(--space1);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box; 
+}
+
+.modulo_pago .main_button{
+  margin-top: 10px;
+}
+
+/* ------------------seccion de modulo pago  */
+
+
+/* ---------------------inicia seccion de CONTACTO */
+.contacto_header{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacto_tittle{
+  margin: 15px 90px;
+}
+
+.contacto_redes_sociales{
+  margin: 15px 75px;
+}
+
+.contacto_1{
+margin: 30px;
+}
+.contacto_2{
+margin: 30px;
+}
+.contacto_3{
+margin: 30px;
+}
+
+.contacto_info{
+  text-align: center;
+  background-color: var(--green-color);
+  width: 300px;
+  border-radius: 5px;
+  margin: auto;
+  padding: 5px 0px 5px 0px;
+  box-shadow: var(--box);
+}
+
+.contacto_name{
+  margin: 0;
+}
+
+.img_contacto{
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+/* ---------------------termina seccion de CONTACTO */
+
+
+
+/* --------------------------seccion de PRODUCTS */
+.main_products{
+  display: block;
+  justify-content: space-around;
+}
+
+.main_container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_products{
+  height: 330px;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+}
+
+.container_products:hover{
+  background-color: var(--green-color);
+  border: 1px var(--black-color);
+  cursor: pointer;
+}
+
+.img_products{
+  margin: 30px;
+}
+
+.tittle_container{
+  margin: 20px 43px;
+}
+
+/* ---------------------------seccion de PRODUCTS */
+
+
+/* --------------------------seccion de footer  */
+footer{
+  display: flex;
+  background: #313337;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+
+.footer_text{
+  color: var(--green-color);
+  text-decoration: none;
+  margin: 0px 10px 0px;
+}
+/* --------------------------seccion de footer  */
